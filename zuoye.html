@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+    <title>搜索</title>
+    <style>
+        body{background-image:url(hua.jpg); color: black;background-position: center; background-attachment:fixed;
+overflow: hidden;min-width: 1000px;min-height: 800px;font-family: 'Open Sans', sans-serif;}
+
+#logo {float: left;}
+
+
+        input[type=text]{width:500px;
+             box-sizing: border-box;
+            border:3px solid rgb(255, 251, 251);
+border-radius:4px;
+font-size:16px;
+background-color:rgb(251, 248, 248);
+background-image: url("sou1.png");
+background-position:1px 1px;
+background-repeat:no-repeat;
+background-size: 40px;
+padding: 12px 20px 12px 40px;
+}
+
+
+
+ul{
+    list-style-type: none;
+margin:0;
+padding: 0%;
+overflow: hidden;
+color: black;
+position: fixed;
+top: 0%;
+width: 100%;
+}
+
+li {float: left;
+    border-right: 1px solid #bbb;
+} 
+
+li a{display: block;
+color: rgb(15, 17, 17);
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;}
+li:last-child{border-right:none;}
+li a:hover:not(.active){
+    background-color:#064d08;}
+
+    .dropbtn { padding:16px; font-size: 16px; border: none;
+cursor: pointer}
+
+.dropbtn { padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ca1818}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 800px;
+  border-right: none;
+  height: 50px;
+  outline: none;
+  color: #f5f9f7;
+}
+
+.searchTerm:focus{
+  color: #0bc233;
+}
+
+.searchButton {
+  width: 100px;
+  border: 1px solid #0ec936;
+  background: #107229;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.wrap{
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+    <ul>
+
+        <li><a  href="https://music.163.com/">music</a></li>
+        <li><a href="https://www.bilibili.com/movie/?spm_id_from=333.1007.0.0">movie</a></li>
+        <li><a href="http://www.360doc.com/index.html">book</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn">... </button>
+            <div class="dropdown-content">
+              <a href="https://www.canva.cn/signup?utm_medium=paid&utm_source=baidu&utm_campaign=ACQ-brand-zone&utm_term=signup&utm_content=sem">painting</a>
+              <a href="https://www.vcg.com/creative/?utm_source=baidusem&utm_medium=cpc&utm_campaign=B1-%E5%9B%BE%E7%89%87-%E9%80%9A%E7%94%A8%E8%AF%8D2&utm_content=02%E6%91%84%E5%BD%B1-%E7%BD%91%E7%AB%99&utm_term=%E6%91%84%E5%BD%B1%E7%BD%91&chid=901">photography</a>
+              
+            </div></li>
+       
+        <li style="float:right"><a  href="https://www.baidu.com/?tn=88093251_95_hao_pg">more</a></li>
+    </ul>
+    <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="search">
+           <button type="submit" class="searchButton" >
+             <i class="fa fa-search">search</i>
+          </button>
+        </div>
+     </div>
+    
+</body>
